@@ -43,7 +43,7 @@ const Popularjobs = () => {
           renderItem={({ item }) => (
             <PopularJobCard item={item} />
           )}
-          keyExtractor={(item) => item.toString()} // Use toString() to ensure a string key
+          keyExtractor={(item) => item.id ?.item.id.toString()} // Use toString() to ensure a string key
           contentContainerStyle={{ columnGap: SIZES.medium }}
           horizontal
         />
